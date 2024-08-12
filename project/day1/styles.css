@@ -1,0 +1,43 @@
+ .yo{
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+    width: 10%;
+   
+}
+.text{
+    margin-left: 52%;
+    background-color: aqua;
+}
+
+.p{
+
+    background-color: rgb(100, 210, 150);
+    text-align: justify;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+    width: 1250px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 40px;
+    margin: auto;
+    margin-top: 5%;
+    
+}
+
+p{
+    
+    font-size: 20px;
+}
+
+button{
+    font-size: large;
+    font-stretch: extra-expanded;
+    height: fit-content;
+    margin-left: 5%;
+    border-radius: 50px;
+    border-style: none;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
