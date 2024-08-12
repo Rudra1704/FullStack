@@ -1,0 +1,71 @@
+.zomato{
+    background: url(WhatsApp\ Image\ 2024-08-10\ at\ 11.58.12\ AM.jpeg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex-direction: column;
+
+ 
+}
+h1{
+    margin: 5px;
+    font-size: 500%;
+    
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+#para{
+
+    font-size: xx-large;
+    font-style:normal;
+    font-style: italic;
+    
+}
+p{
+    margin-top: 5px   ;
+    
+}
+#links{
+    background-color: white;
+    border: 0px ;
+    border-radius: 1px;
+    width: 50%;
+    height: 3%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#icon{
+    margin-left: 1%;
+    margin-right: 0.5%;
+
+}
+#locations{
+    border-width: 0px;
+    border-right: 1px solid gray;
+    width: 35%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 5px;
+}
+
+#searching{
+    margin-left: 5px;
+    border: 0px;
+    width: 50%;
+
+}
