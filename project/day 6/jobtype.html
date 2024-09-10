@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Eligibility Checker</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Loan Eligibility Checker</h2>
+        <label for="jobType">Job Type:</label>
+        <select id="jobType" onchange="onJobTypeChange()">
+            <option value="government">Government</option>
+            <option value="business">Business</option>
+            <option value="private">Private</option>
+        </select>
+
+        <div id="salarySection" style="display: none;">
+            <label for="salary">Salary (₹):</label><data value="sad">sss
+                . 
+            </data>
+            <input type="number" id="salary">
+        </div>
+
+        <div id="turnoverSection" style="display: none;">
+            <label for="turnover">Yearly Turnover (₹):</label>
+            <input type="number" id="turnover">
+        </div>
+
+        <button onclick="checkEligibility()">Check Eligibility</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function onJobTypeChange() {
+            var jobType = document.getElementById('jobType').value;
+            var salarySection = document.getElementById('salarySection');
+            var turnoverSection = document.getElementById('turnoverSection');
+
+            if (jobType === 'government') {
+                salarySection.style.display = 'block';
+                turnoverSection.style.display = 'none';
+            } else if (jobType === 'business') {
+                salarySection.style.display = 'none';
+                turnoverSection.style.display = 'block';
+            } else {
+                salarySection.style.display = 'none';
+                turnoverSection.style.display = 'none';
+            }
+        }
+
+        function checkEligibility() { 
+            
+            var jobType = document.getElementById('jobType').value;
+            var result = document.getElementById('result');
+
+            if (jobType === 'government') {
+                var salary = document.getElementById('salary').value;
+                if (salary > 50000) {
+                    result.innerHTML = 'You can apply for a loan.';
+                } else {
+                    result.innerHTML = 'You cannot apply for a loan.';
+                }
+            } else if (jobType === 'business') {
+                var turnover = document.getElementById('turnover').value;
+                if (turnover > 2000000) {
+                    result.innerHTML = 'You can apply for a loan.';
+                } else {
+                    result.innerHTML = 'You cannot apply for a loan.';
+                }
+            } else if (jobType === 'private') {
+                result.innerHTML = 'No loan available for you.';
+            }
+        }
+    </script>
+</body>
+</html>
